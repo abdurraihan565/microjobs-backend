@@ -286,9 +286,9 @@ app.get('/api/userdata', (req, res) => {
   );
 });
 
-/*app.get('/api/products', (req, res) => {
-  res.send(data.products);
-});*/
+app.get('/', (req, res) => {
+  res.send('this is backend api');
+});
 
 const port = process.env.PORT || 7000;
 app.listen(port, () => {
